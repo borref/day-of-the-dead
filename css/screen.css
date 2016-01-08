@@ -1,0 +1,376 @@
+/**
+ ** Fonts
+ **/
+
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**
+ ** Reset
+ **/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ ** Default Body's rules
+ **/
+
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.main-content {
+  position: relative;
+  top: 90px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ ** Layout rules
+ **/
+
+
+/* Responsive rules */
+
+header {
+  background-color: #24044C;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header h1 {
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+}
+
+header h1 a {
+  background: url(../images/logo.png);
+  display: block;
+  height: 32px;
+  text-indent: -9999px;
+  width: 200px;
+}
+
+header nav {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+header nav h2 {
+  background: url(../images/skull-head.svg) no-repeat;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 35px;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: none;
+}
+
+#announcements h2 {
+  display: none;
+}
+
+#announcements article p {
+  margin: 0;
+}
+
+#announcements .column {
+  color: #3E0301;
+  font-weight: bold;
+  width: 100%;
+}
+
+#announcements {
+  background-color: #E9DECC;
+  padding-top: 60px;
+}
+
+#announcements .column img {
+  width: 100%;
+}
+
+#announcements .column p {
+  text-align: center;
+}
+
+#announcements .column .cartel {
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+#announcements .column .cartel:before {
+  content: url(../images/section1-dot-border-up.png);
+  display: block;
+  margin-bottom: 25px;
+}
+
+#announcements .column .cartel:after {
+  content: url(../images/section1-dot-border-down.png);
+  display: block;
+  margin-top: 25px;
+}
+
+#announcements .column span {
+  color: #24044B;
+  font-size: 46px;
+  font-family: 'League Gothic Regular';
+  text-transform: uppercase;
+}
+
+#invitation {
+  background-color:  #23084E;
+  padding: 100px 0 50px;
+  position: relative;
+  text-align: center;
+}
+
+#invitation h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 46px;
+  font-family: 'League Gothic Regular';
+  text-transform: uppercase;
+}
+
+#invitation h2:before {
+  content: url(../images/dot-border-up.png);
+  display: block;
+}
+
+#invitation h2:after {
+  content: url(../images/dot-border-down.png);
+  display: block;
+}
+
+#invitation .wrapper {
+  background: url(../images/section5_guitar.png) no-repeat center top;
+  padding-top: 400px;
+}
+
+#invitation p {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#invitation p:nth-of-type(2) {
+  text-transform: uppercase;
+}
+
+#invitation p:last-of-type {
+  background-color: #592419;
+  color: #F1BF5B;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+#invitation p:last-of-type:hover {
+  background-color: #502016;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+  position: relative;
+  width: 100%;
+}
+
+
+@media(min-width: 769px) {
+    #announcements .column img {
+        width: auto;
+    }
+}
+
+@media(min-width: 1025px) {
+  header h1 {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+  }
+
+  header nav {
+    position: absolute;
+    right: 0;
+    top: 35px;
+  }
+
+  header nav h2 {
+    display: none;
+  }
+
+  header nav ul {
+    display: block;
+    margin: 0;
+  }
+
+  header ul li {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin-right: 60px;
+  }
+
+  header ul li:last-child {
+    margin-right: 15px;
+  }
+
+  header ul li a {
+    color: rgba(255, 255, 255, .6);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  header ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  #announcements {
+    background-color: #E9DECC;
+    padding: 50px 20px;
+    position: relative;
+  }
+
+  #announcements h2 {
+    display: none;
+  }
+
+  #announcements .column {
+    color: #3E0301;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 50%;
+  }
+
+  #announcements .column p {
+    text-align: center;
+  }
+
+  #announcements .column .cartel:before {
+    content: url(../images/section1-dot-border-up.png);
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  #announcements .column .cartel:after {
+    content: url(../images/section1-dot-border-down.png);
+    display: block;
+    margin-top: 25px;
+  }
+
+  #announcements .column span {
+    color: #24044B;
+    font-size: 46px;
+    font-family: 'League Gothic Regular';
+    text-transform: uppercase;
+  }
+
+  #announcements .column.left {
+    float: left;
+  }
+
+  #announcements .column.right {
+    float: right;
+  }
+
+  #announcements:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+  #invitation {
+    background-color:  #23084E;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+  }
+
+  #invitation .column {
+    width: 40%;
+  }
+
+  #invitation .wrapper {
+    background: url(../images/section5_guitar.png) no-repeat right top;
+    height: 500px;
+    padding-top: 0;
+  }
+
+  #invitation h2 {
+    color: #FFFFFF;
+    font-size: 46px;
+    font-family: 'League Gothic Regular';
+    text-transform: uppercase;
+  }
+
+  #invitation h2:before {
+    content: url(../images/dot-border-up.png);
+    display: block;
+  }
+
+  #invitation h2:after {
+    content: url(../images/dot-border-down.png);
+    display: block;
+  }
+
+  #invitation p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #invitation p:nth-of-type(2) {
+    text-transform: uppercase;
+  }
+
+  #invitation p:last-of-type {
+    background-color: #592419;
+    color: #F1BF5B;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  #invitation p:last-of-type:hover {
+    background-color: #502016;
+  }
+
+  #invitation:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+}
+
+
